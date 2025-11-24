@@ -1,0 +1,16 @@
+#block1{
+    background-color: red;
+}
+#block2{
+    background-color: blue;
+    padding: 22px;
+}
+#block3{
+    background-color: yellow;
+    padding: 22px;
+}
+
+.text-block{
+    padding: 22px;
+   margin: 22px;
+}

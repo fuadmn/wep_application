@@ -1,0 +1,19 @@
+.hero-box{
+    background-color: antiquewhite;
+    width: 98vw;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    border: 1px solid tomato;
+}
+
+.rectengle{
+    width: 200px;
+    height: 100px;
+    border: 1px solid tomato;
+}

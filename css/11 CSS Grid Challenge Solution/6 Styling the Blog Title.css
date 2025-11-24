@@ -1,0 +1,42 @@
+body{
+    font-family: "Heebo", serif;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.grid-container div{
+    /* background-color: rgb(157, 243, 148); */
+    padding: 40px;
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/span 3;
+}
+
+.blogs .blog img{
+    width: 100%;
+}
+
+.blogs .blog .blog-title{
+    font-weight: 500;
+    list-style: 2px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.blogs .blog .blog-title:hover{
+    color: #ffa301;
+}

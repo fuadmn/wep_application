@@ -1,0 +1,11 @@
+console.log("Properties and values of each person");
+
+const people = [
+  { name: "Alice", age: 25, city: "Wnderland" },
+  { name: "Bo", age: 30, city: "Builerland" },
+  { name: "Charlie", age: 35, city: "Choocolate Factory" },
+];
+
+
+
+for(const num = )

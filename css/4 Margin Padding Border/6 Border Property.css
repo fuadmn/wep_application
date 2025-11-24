@@ -1,0 +1,18 @@
+.box{
+    /* width , style color */
+    /* border: 1px solid tomato; */
+    padding: 22px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.solid{
+    border: 2px solid tomato;
+}
+
+.dotted{
+    border: 2px dotted green;
+}
+
+.double{
+    border: 2px double blue;
+}

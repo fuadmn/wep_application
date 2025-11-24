@@ -1,0 +1,13 @@
+.contacnt-box{
+    border: 2px solid tomato;
+    padding: 20px;
+    position: relative;
+}
+
+img{
+    position: relative;
+    width: 100px;
+    top: -20px;
+    right: -50px;
+    
+}

@@ -1,0 +1,35 @@
+.profile-card{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+img{
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.user-info{
+    position: absolute;
+    bottom: -210px;
+    background-color: rgba(17, 10, 10, 0.6);
+    width: 611px;
+    height: 112px;
+    border-radius: 10px;
+
+}
+.user-name{
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.user-location{
+    text-align: center;
+    color: white;
+    padding-bottom: 16px;
+ 
+}

@@ -1,0 +1,68 @@
+body{
+    font-family: "Heebo", serif;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.grid-container div{
+    /* background-color: rgb(157, 243, 148); */
+    padding: 10px;
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/span 3;
+}
+
+.blogs .blog img{
+    width: 100%;
+    height: 200px;
+}
+
+.blogs .blog .blog-title{
+    font-weight: 500;
+    list-style: 2px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.blogs .blog .blog-title:hover{
+    color: #ffa301;
+}
+
+.blogs .blog .badge-date{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.blogs .blog .badge-date .badge{
+    font-weight: 700;
+    color: #230e00;
+    line-height: 11px;
+    font-size: 11px;
+    background-color: #ffa300;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogs .blog .badge-date .date{
+    color: #767676;
+    line-height: 11px;
+    font-weight: 700;
+    font-size: 11px;
+}
