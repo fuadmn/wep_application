@@ -1,4 +1,4 @@
-// HTTP Requests // data database lageenayo  waxa lomaraa HTTP
+// HTTP Requests // data database lageenayo waxa lomaraa HTTP
 
 //  HTTP Status Codes //calmado qaas ah lagu garto
 

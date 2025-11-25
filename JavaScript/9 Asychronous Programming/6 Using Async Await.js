@@ -20,10 +20,10 @@ function fetchUserData() {
 // .then((data) => console.log("User data",data)) //then waa marko seccuss noqdo
 // .catch((err) => console.log(err)) //.catch() qabo wixi cilad ah
 
-// try and  catch //wixi cilad ah in mel lugu yelo wixi successFull mel lagu yelo
+
 
 async function displayUserData() {
-  try {
+  try {   // try and  catch // wixi cilad ah in mel lugu yelo wixi successFull mel lagu yelo
     //succuss
     const user = await fetchUserData();
     console.log(user);
