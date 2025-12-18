@@ -1,6 +1,6 @@
 
 let grade = 60;
 
-const School = grade >= 60 ? "Pass" : "Fail";
+const School = grade >= 40 ? "Pass" : "Fail";
 
 console.log(School);

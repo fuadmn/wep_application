@@ -37,3 +37,4 @@ function setSuccess(element) {
   element.classList.add("valid");
   element.classList.remove("invalid");
 }
+

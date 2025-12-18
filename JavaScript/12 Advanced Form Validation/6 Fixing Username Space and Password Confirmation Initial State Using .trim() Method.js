@@ -31,7 +31,7 @@ form.addEventListener("submit", function (event) {
     password.focus();
     return;
   } else if (!isConfirmPassword) {
-    password.focus();
+    confirmPassword.focus();
     return;
   }
 

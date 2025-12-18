@@ -6,3 +6,4 @@ for(const key in student){
    console.log(student[key]);
    
 }
+

@@ -5,6 +5,9 @@ const todoList = document.querySelector("#todo-list");
 
 document.addEventListener("DOMContentLoaded", loadTasks);
 
+document.addEventListener("DOMContentLoaded",loadTasks);
+
+
 function loadTasks(){
 
   // getting old tasks tasks form localStorage
@@ -59,7 +62,7 @@ function addTaskToDOM(task) {
 
 function saveTaskToLocalStorage(task){
 
-  const oldTask =getTasksFormLocalStorage();
+  const oldTask = getTasksFormLocalStorage();
   oldTask.push(task);
   
   localStorage.setItem("tasks", JSON.stringify(oldTask))
@@ -68,6 +71,10 @@ function saveTaskToLocalStorage(task){
 
 function getTasksFormLocalStorage(){
 
-  const oldTask = JSON.parse(localStorage.getItem("tasks")) || [];
+  const oldTask = JSON.parse(localStorage.getItem("tasks")) || [];  // || hahoo null yahay waxa lamacamishaa array da
+
   return oldTask;
 }
+
+
+

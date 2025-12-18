@@ -5,8 +5,8 @@ colors.push("while");
 
 console.log(colors);
 
-colors.pop();
+colors.push()
 
-
+console.log(colors)
 
 

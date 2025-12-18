@@ -16,7 +16,7 @@ function handleClick() {
 button.addEventListener("click", handleClick);
 
 removeEvents.addEventListener("click", function () {
-  button.removeEventListener("click", ); // ka qaad awooda oo heestay ee click da
+  button.removeEventListener("click", handleClick); // ka qaad awooda oo heestay ee click da
   console.log("Click event removed");
 });
 

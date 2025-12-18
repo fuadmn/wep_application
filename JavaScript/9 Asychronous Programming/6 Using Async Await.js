@@ -21,7 +21,6 @@ function fetchUserData() {
 // .catch((err) => console.log(err)) //.catch() qabo wixi cilad ah
 
 
-
 async function displayUserData() {
   try {   // try and  catch // wixi cilad ah in mel lugu yelo wixi successFull mel lagu yelo
     //succuss

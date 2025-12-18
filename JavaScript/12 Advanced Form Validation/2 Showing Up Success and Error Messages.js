@@ -15,7 +15,7 @@ form.addEventListener("submit", function (event) {
   success.textContent = "";
   // Validate fields
 
-  const isUsernameValid = validateUsername();
+  const  = validateUsername();
 
   if (!isUsernameValid) {
     username.focus(); //waxa us saara focus ka sara input ka

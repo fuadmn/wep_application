@@ -7,7 +7,7 @@ function changeImage() {
   );
 
   //element.style.
-  image.style.border = "2px solid red";
+  image.style.border = "2 px solid red";
   image.style.padding = "10px";
   image.style.backgroundColor = "#cfc2dc";
 }
@@ -19,5 +19,5 @@ function changeContentStyle() {
   header.style.color = "skyblue";
   text.style.padding = "20px";
   text.style.border = "1px solid black ";
-  text.style.fontSize = "30px";
+  
 }

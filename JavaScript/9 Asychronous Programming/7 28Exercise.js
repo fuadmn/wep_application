@@ -1,38 +1,25 @@
 
-function fetchUserData(){
-    
-    return new Promise((resolve, reject) => {
-
+function fetchPromise(){
+    return new Promise((resolve,recject) => {
         setTimeout(() => {
-
-            const success = false;
-
+            const success = true;
             if(success){
-                resolve({id: 1, name: "john Smith"});
+                resolve({id: 3, name: "cumar"})
             }else{
-                reject("Failed to fetch user data");
+                recject("Error the Promise")
             }
-        },1000);
+        }, 3000);
     })
 }
 
-// fetchUserData()
 
-// .then((data) => console.log("User data",data)) //then waa marko seccuss noqdo
-// .catch((err) => console.log(err)) //.catch() qabo wixi cilad ah
-
-
-
-
-async function displayUserData() {
+async function displayPromise() {
     try{
-        const user = await fetchUserData();
+        const user = await fetchPromise();
         console.log(user);
-    }catch(err){
-        (err)
+    } catch(err){
     console.log(err);
-    
-}
+    }
 }
 
-displayUserData();
+displayPromise()

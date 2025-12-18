@@ -23,6 +23,7 @@ function addTask(e) {
     addTaskToDOM(task);
     saveTaskToLocalStorage(task)
 
+
     todoInput.value = ""; //input ka qimaha ku jiro firaqeey markad dom ka dirto input ka ifiraqeey
   }
 }
@@ -41,11 +42,13 @@ function addTaskToDOM(task) {
 }
 
 
-function saveTaskToLocalStorage(task){
+function saveTaskToLocalStorage(task) {
 
-  const oldTask = JSON.parse(localStorage.getItem("tasks")) || [];
+  const oldTask = JSON.parse(localStorage.getItem("tasks")) || [];   // || hahoo null yahay waxa lamacamishaa array da
+
 
   oldTask.push(task);
-  
+
   localStorage.setItem("tasks", JSON.stringify(oldTask))
 }
+

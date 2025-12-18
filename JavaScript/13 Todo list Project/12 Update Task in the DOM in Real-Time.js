@@ -78,6 +78,14 @@ function attachEventListeners(li,task){
 
  }
 
+ function handleDetele(taskId,li){
+
+  const taskSpan = li.querySelector(".task");
+
+  console.log(taskSpan)
+  
+  
+ }
 
  function handleEdit(taskId, li){
    

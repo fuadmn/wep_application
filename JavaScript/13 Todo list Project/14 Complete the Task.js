@@ -104,6 +104,7 @@ function attachEventListeners(li,task){
   
  }
 
+ 
  function updateTask(id, newTaskText){
 
       const tasks = getTasksFormLocalStorage();

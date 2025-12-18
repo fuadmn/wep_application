@@ -1,3 +1,4 @@
+ 
  function operate(a, b, callbacks){
    return callbacks( a, b)
  }

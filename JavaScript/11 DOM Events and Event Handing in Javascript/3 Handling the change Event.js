@@ -1,3 +1,6 @@
+
+// change waxaa loo isticmaalaa <input> <textare> <select> markey isbadalaan
+
 const colorSelect = document.querySelector("#color");
 const selectColor = document.querySelector("#SelectedColor");
 

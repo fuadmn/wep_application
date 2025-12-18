@@ -9,7 +9,7 @@ todoForm.addEventListener("submit", addTask);
 function addTask(e) {
   e.preventDefault();
 
-  const taskText = todoInput.value.trim();
+  const taskText = todoInput.value.();
 
   //    console.log(new Date(Date.now()).getHours());
 

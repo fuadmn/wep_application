@@ -12,7 +12,8 @@ function addItem() {
   //change the content
   newItem.textContent = "New Item";
 
-  list.appendChild(newItem);
+  list.appendChild(newItem); // list ka item oo heesto waxaad ku dartaa itemka soo socdo
 }
 
 function removeItem() {}
+

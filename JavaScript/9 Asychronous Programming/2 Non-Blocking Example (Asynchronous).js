@@ -1,6 +1,6 @@
 // Asynchronous Non-blocking // waa code and ku xayireenin dadka ka dabeeyo shaqadooda ineey qabsadaan asigane inoo qabsado shaqadiisa
 
-// setTimeout //code kan xiliga fulineesid  waqti ku xirtid weye
+// setTimeout //code kan xiliga fulineesid waqti ku xirtid weye
 
 // 1000ms 1 second
 

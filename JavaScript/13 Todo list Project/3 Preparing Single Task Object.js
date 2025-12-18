@@ -13,7 +13,10 @@ function addTask(e){
 
    const taskText = todoInput.value.trim()
    
-//    console.log(new Date(Date.now()).getHours());
+    // console.log(Date.now()) // waxa ku siinaa trikha numbar ah oo la fahmi karin
+    //  console.log(new Date(Date.now())) // markaa larujomo time ka
+    //  console.log(new Date(Date.now()).getFullYear()) // markaa larujomo sanadka
+  //  console.log(new Date(Date.now()).getHours()); //sacada karaas lajoogo isii
    
   if(taskText !== ""){
     const task = {
@@ -28,5 +31,6 @@ function addTask(e){
 }
 
 function addTaskToDOM(task){
+    console.log(task)
     
 }

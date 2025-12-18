@@ -1,0 +1,130 @@
+
+
+
+const form = document.querySelector("#form");
+const postTitle = document.querySelector("#postTitle");
+const imageUrl = document.querySelector("#imageUrl");
+const WriteYour = document.querySelector("#WriteYour");
+const Write_your = document.querySelector("#Write_your");
+const postUl = document.querySelector("#postUl");
+
+document.addEventListener("DOMContentLoaded", loadPost);
+
+function loadPost() {
+
+  const posts = getPost();
+
+  posts.forEach(post => {
+    addPostTextDOM(post);
+
+  });
+
+
+}
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const postTitleText = postTitle.value.trim();
+  const postImage = imageUrl.value;
+  const WritePost = WriteYour.value;
+
+  if (postTitleText !== "") {
+    const post = {
+      id: Date.now(),
+      text: postTitleText,
+      image: postImage,
+      textPost: WritePost,
+      completed: false,
+    };
+
+    addPostTextDOM(post);
+    savePost(post);
+
+
+    postTitle.value = "";
+    imageUrl.value = "";
+    WriteYour.value = "";
+  }
+});
+
+function addPostTextDOM(post) {
+  const li = document.createElement("li");
+  li.classList = `form`;
+  li.dataset.id = post.id;
+
+  li.innerHTML = ` <span class="post">${post.text}</span>  
+  <img class="postImage" src="${post.image}" alt="todo image"/>
+        <span class="postText">${post.textPost}</span> 
+                     <div class="edit-delete"> 
+                      <button class="edit-btn">Edit</button>
+                     <button class="delete-btn">Delete</button>
+                      </div>
+                    `;
+
+  postUl.appendChild(li);
+
+  deltePost(li, post);
+
+}
+
+function deltePost(li, post) {
+
+  const delleteBtn = li.querySelector(".delete-btn");
+  const editBtn = li.querySelector(".edit-btn");
+
+  delleteBtn.addEventListener("click", function () {
+    delteHanle(post.id, li)
+  });
+
+  editBtn.addEventListener("click", function () {
+    handleEdit(post.id, li)
+  })
+
+}
+
+function handleEdit(taskId, li) {
+
+  const taskSpan = li.querySelector(".post");
+  console.log(taskSpan.textContent)
+
+  const postImage = li.querySelector(".postImage");
+
+
+  console.log(postImage.src)
+
+  const postText = li.querySelector(".postText");
+  console.log(postText.textContent)
+
+
+}
+
+
+function delteHanle(id, li) {
+
+  let posts = getPost();
+
+  posts = posts.filter(post => post.id != id);
+
+  localStorage.setItem("posts", JSON.stringify(posts));
+
+  li.remove();
+
+}
+
+function savePost(post) {
+
+
+  const allPost = getPost();
+
+  allPost.push(post)
+
+  localStorage.setItem("posts", JSON.stringify(allPost));
+
+}
+
+function getPost() {
+  const allPost = JSON.parse(localStorage.getItem("posts")) || [];
+  return allPost;
+
+}

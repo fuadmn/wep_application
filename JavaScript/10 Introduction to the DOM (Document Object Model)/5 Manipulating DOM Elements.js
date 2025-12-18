@@ -13,7 +13,7 @@ const buttons = document.querySelector("button");
 
 console.log(buttons);
 
-// textContent waxay badaleesaa text ku dhaxjiro elementiga
+// textContent   waxay badaleesaa text ku dhaxjiro elementiga
 // innerHTML   waxa waaye inaad badasho body waxa ku dhaxjiro inaad badasho weye
 
 function changeContent() {
@@ -24,3 +24,6 @@ function changeContent() {
 function ChangeElement() {
   text.innerHTML = `Hi welcome to my website <strong> consider to like my website </strong>`;
 }
+
+
+ 

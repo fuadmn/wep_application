@@ -8,32 +8,30 @@ function switchMode() {
 
   if (document.body.classList.contains("dark-mode")) {
     toggleButton.textContent = "Toggle Light Mode";
-    
+
     localStorage.setItem("mode", "dark");
-    
-  }else{
+
+  } else {
     toggleButton.textContent = "Toggle Dark Mode";
     localStorage.setItem("mode", "light");
 
   }
 }
 
-window.addEventListener("DOMContentLoaded", function(){
-
+window.addEventListener("DOMContentLoaded", function () {   //window waxa laga wadaa shaashada oo dhan
 
   //localStorage checking
 
   const saveMode = localStorage.getItem("mode");
 
-  if(saveMode === "dark"){
-      
+  if (saveMode === "dark") {
+
     document.body.classList.add("dark-mode");
     toggleButton.classList.add("dark-mode");
     toggleButton.textContent = "Toggle Light Mode"
-  }else{
+  } else {
     toggleButton.textContent = "Toggle Dark Mode"
 
   }
-  
-  
+
 })
