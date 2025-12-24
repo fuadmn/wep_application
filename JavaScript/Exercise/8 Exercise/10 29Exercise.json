@@ -1,9 +1,0 @@
-{
-    "id": 1,
-    "name": "Xasan",
-    "city": "Xamar",
-    "order": [
-        {"id": 1, "name": "Nuux", "addrees": "km4"},
-        {"id": 2, "name": "Qalid", "addrees": "labdhagx"}
-    ]
-}

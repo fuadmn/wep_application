@@ -54,7 +54,7 @@ function addPostTextDOM(post) {
   li.dataset.id = post.id;
 
   li.innerHTML = ` <span class="post">${post.text}</span>  
-  <img class="postImage" src="${post.image}" alt="todo image"/>
+  <img class="postImage" src="${post.image}" alt=" image"/>
         <span class="postText">${post.textPost}</span> 
                      <div class="edit-delete"> 
                       <button class="edit-btn">Edit</button>
@@ -88,16 +88,42 @@ function handleEdit(taskId, li) {
   const taskSpan = li.querySelector(".post");
   console.log(taskSpan.textContent)
 
-  const postImage = li.querySelector(".postImage");
+  const newPostTxt = prompt("Edit your task:", taskSpan.textContent)
 
+  if (newPostTxt !== null && newPostTxt.trim() !== "") {
+
+    taskSpan.textContent = newPostTxt;
+  }
+
+  const postImage = li.querySelector(".postImage");
+  console.log("image element ", postImage)
 
   console.log(postImage.src)
+
+  const newImage = prompt("Edit your Image:", postImage.textContent)
+
+  if (newImage !== null && newImage.trim() !== "") {
+
+    // postImage.textContent = newImage;
+    postImage.src = newImage;
+
+
+  }
+
 
   const postText = li.querySelector(".postText");
   console.log(postText.textContent)
 
+  const newTxt = prompt("Edit your newTxt:", postText.textContent)
+  console.log(newImage, postText)
+  if (newTxt !== null && newTxt.trim() !== "") {
 
+    postText.textContent = newTxt;
+
+  }
+  console.log(postImage, newPostTxt)
 }
+
 
 
 function delteHanle(id, li) {
