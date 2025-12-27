@@ -1,52 +1,22 @@
 
 
+function changeImage(){
 
-const form = document.querySelector("#form");
-const postTitle = document.querySelector("#postTitle");
-const imageUrl = document.querySelector("#imageUrl");
-const WriteYour = document.querySelector("#WriteYour");
-const Write_your = document.querySelector("#Write_your");
-const postUl = document.querySelector("#postUl");
+     const image = document.querySelector('#image');
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const postTitleText = postTitle.value.trim();
-  const postImage = imageUrl.value;
-    const WritePost = WriteYour.value;
-
-  if (postTitleText !== "") {
-    const post = {
-      id: Date.now(),
-      text: postTitleText,
-      image: postImage,
-      textPost: WritePost,
-      completed: false,
-    };
-    console.log(post);
-    addPostTextDOM(post);
+     const url = prompt("Please enter your image URL:");
+     const borderColor = prompt("Please enter your desired border color:");
+     const width = prompt("Please enter the width of the image (in pixels");
+     const height = prompt("Please enter the height of the image (in pixels):");
+     const borderRadius = prompt("Please enter the border radius (in pixels):");
 
 
+     image.setAttribute('src',url);
+     image.style.border = `22px solid ${borderColor}`;
+     image.style.width = `${width}px`;
+     image.style.height = `${height}`;
+     image.style.borderRadius = `${borderRadius}px`;
+     image.style.padding = "10px";
+     image.style.backgroundColor = `#cfc2dc`
 
-    postTitle.value = "";
-    imageUrl.value = "";
-    WriteYour.value = "";
-  }
-});
-
-function addPostTextDOM(post) {
-  const li = document.createElement("li");
-  li.classList = `form`;
-  li.dataset.id = post.id;
-
-  li.innerHTML = ` <span class="task">${post.text}</span>  
-  <img src="${post.image}" alt="todo image"/>
-        <span class="task">${post.textPost}</span> 
-                     <div class="edit-delete"> 
-                      <button class="edit-btn">Edit</button>
-                     <button class="delete-btn">Delete</button>
-                      </div>
-                    `;
-
-  postUl.appendChild(li);
 }
