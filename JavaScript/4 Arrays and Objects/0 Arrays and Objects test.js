@@ -211,61 +211,107 @@
 
 console.log("__________________Arrays and Objects______________________");
 
-const libreary = ["Math","Arabic","Bio","Chimety"];
+// const libreary = ["Math","Arabic","Bio","Chimety"];
 
-console.log(libreary);
-console.log(libreary[3]);
+// console.log(libreary);
+// console.log(libreary[3]);
+
+const libreary = ["Math","Arabic","Bio","Chimety"];
+console.log(libreary)
+console.log(libreary[3])
 
 console.log("__________________Array Methods______________________");
 
-libreary.push("Phct");
-console.log(libreary);
+// libreary.push("Phct");
+// console.log(libreary);
+// libreary.pop()
+// console.log(libreary);
+// libreary.unshift("History")
+// console.log(libreary);
+// libreary.shift()
+// console.log(libreary);
+// console.log(libreary.length);
+
+console.log(libreary)
+libreary.push("ph")
+console.log(libreary)
 libreary.pop()
-console.log(libreary);
-libreary.unshift("History")
-console.log(libreary);
+console.log(libreary)
+libreary.unshift("somalia")
+console.log(libreary)
 libreary.shift()
-console.log(libreary);
-console.log(libreary.length);
+console.log(libreary)
+console.log(libreary.length)
+
 
 console.log("__________________Objects______________________");
 
-const school = {id: 1, name: "xasan", address: "dallo"};
-console.log(school);
-console.log(school.name);
+// const school = {id: 1, name: "xasan", address: "dallo"};
+// console.log(school);
+// console.log(school.name);
+
+const school = {id: 1, name: "ali xasan cumar", address: "holwadaag"}
+console.log(school)
+console.log(school.address)
 
 console.log("__________Adding and Modifying Properties.html__________");
 
-const person = {
-   id: 1,
-   name: "xasan",
-   city: "xamar",
-   greet : function(){
-     console.log("Hi Hwo are you doing, this.name");
-   }
-}
+// const person = {
+//    id: 1,
+//    name: "xasan",
+//    city: "xamar",
+//    greet : function(){
+//      console.log("Hi Hwo are you doing, this.name");
+//    }
+// }
 
-console.log(person);
+// console.log(person);
+
+const person = {
+  id: 1,
+  name: "yusuuf",
+  city: "kismayo",
+  greet : function(){
+    console.log("hello, this.name")
+    
+  }
+}
+console.log(person)
 
 console.log("__________Arrays of Objects___________");
 
+// const libr = ["Math","Arabic","Bio","Chimety"];
 
-const libr = ["Math","Arabic","Bio","Chimety"];
+// const schools = [ 
+//   {id: 1,
+//      name: "xasan",
+//       address: "dallo"
+//     },
 
-const schools = [ 
-  {id: 1,
-     name: "xasan",
-      address: "dallo"
-    },
+//      {id: 2,
+//      name: "deeqo",
+//       address: "warshiiq"
+//     }
+//   ]
 
-     {id: 2,
-     name: "deeqo",
-      address: "warshiiq"
-    }
-  ]
-
-
-  console.log(schools);
-  console.log(schools[0].id);
-  console.log(schools[1].name);
+//   console.log(schools);
+//   console.log(schools[0].id);
+//   console.log(schools[1].name);
   
+const librearys = ["Math","Arabic","Bio","Chimety"];
+
+const schoolss = [
+   {
+    id: 1,
+    name: "luul",
+    city: "waaberi"
+   },
+   {
+      id: 55,
+      name: "nuur",
+      city: "hodon"
+   }
+]
+console.log(schoolss)
+console.log(schoolss[1].id)
+console.log(schoolss[1].name)

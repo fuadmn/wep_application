@@ -159,20 +159,37 @@
 
 console.log("_____________Difference Between let and const_____________");
 
-const book = 10
-let pen  = 10
+// const book = 10
+// let pen  = 10
 
-console.log(book);
-console.log(pen);
+// console.log(book);
+// console.log(pen);
 
-pen = "pencil";
-console.log(pen);
+// pen = "pencil";
+// console.log(pen);
+
+const Difference = "dallo";
+let Between = "dayib";
+
+console.log(Difference);
+console.log(Between);
+
+
 
 
 console.log("_______________Operators Arithmetic Operators___________")
 
-const Operators = 11;
-const Arithmetic = 11;
+// const Operators = 11;
+// const Arithmetic = 11;
+
+// console.log(Operators + Arithmetic);
+// console.log(Operators - Arithmetic);
+// console.log(Operators * Arithmetic);
+// console.log(Operators / Arithmetic);
+// console.log(Operators % Arithmetic);
+
+const Operators = 15;
+const Arithmetic = 30;
 
 console.log(Operators + Arithmetic);
 console.log(Operators - Arithmetic);
@@ -180,9 +197,12 @@ console.log(Operators * Arithmetic);
 console.log(Operators / Arithmetic);
 console.log(Operators % Arithmetic);
 
-
-
 console.log("_____________Comparison Operators:______________");
+
+// console.log(Operators == Arithmetic);
+// console.log(Operators != Arithmetic);
+// console.log(Operators === Arithmetic);
+// console.log(Operators !== Arithmetic);
 
 console.log(Operators == Arithmetic);
 console.log(Operators != Arithmetic);
@@ -191,13 +211,29 @@ console.log(Operators !== Arithmetic);
 
 console.log("____________________Greater Than or Less Than____________");
 
-console.log(Operators > Arithmetic);
-console.log(Operators < Arithmetic);
-console.log(Operators >= Arithmetic);
-console.log(Operators <= Arithmetic);
+// console.log(Operators > Arithmetic);
+// console.log(Operators < Arithmetic);
+// console.log(Operators >= Arithmetic);
+// console.log(Operators <= Arithmetic);
+
+const Than_or = 20;
+let Less_Than = 10;
+
+console.log(Than_or > Less_Than);
+console.log(Than_or < Less_Than);
+console.log(Than_or <= Less_Than);
+console.log(Than_or <= Less_Than);
+
 
 
 console.log("____________________Logical Operators_____________");
-console.log(Operators && Arithmetic);
-console.log(Operators || Arithmetic);
-console.log(!Operators);
+// console.log(Operators && Arithmetic);
+// console.log(Operators || Arithmetic);
+// console.log(!Operators);
+
+const Logical = true;
+let  Operator = false;
+
+console.log(Logical && Operator);
+console.log(Logical || Operator);
+console.log(!Logical)

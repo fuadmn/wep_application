@@ -213,83 +213,140 @@
 
 
 
-console.log("___________Function Declaration:_____________");
+console.log("____Function Declaration:______");
 // function a(){
 //     console.log("somali")
 // }
 // a();
-
-function Declaration (){
-    console.log("Declaration");
+function dallo(){
+    console.log("Somalia")
 }
-Declaration();
-console.log("____Function Parameters and Arguments __________");
 
-// function b(kaal){
-//     console.log(  kaal)
+dallo()
+console.log("____Function Parameters and Arguments _____");
+
+// function greet(name){
+
+//     console.log('Hello ' + name);
+    
 // }
-// b("qalid");
 
-function Parameters(city){
-    console.log(city);
+// greet("Hamuuda");
+// greet("Hawo");
+// greet("Shukri");
+// greet("Karim");
+
+function jum(name){
+    console.log('hello ' + name)
 }
-Parameters("somalia");
-console.log("______Function Parameters and Arguments___________");
+jum("xasan")
 
-// function c(a,b){
-//     console.log("hello", a+b)
+
+
+console.log("____Function Parameters and Arguments_____");
+
+// function add(a,b){
+//     // console.log(a + b);
+//     return a+b;// return waxa soo ciliyaa ee wax madawaco
+    
 // }
-// c(22,22);
 
-function Arguments(a,b){
-    console.log("Hello", a+b);
+// // console.log(add(10,30));
+
+// let result = add(10,30);
+
+// console.log(result / 2);
+
+function number(a,b){
+    return a + b;
 }
-Arguments(2,3);
-console.log("__________Function Return Values_____________");
+
+console.log(number(10,30));
+
+let result = number(2,30);
+console.log(result / 2)
+
+
+console.log("__Function Return Values___");
 
 // function d(a,c){
 //     return a * c;
 // }
 // d(22,11)
 
-function Return(a,b){
-    console.log(a * b);
+function number(a,b){
     return a * b;
 }
-Return(100,100)
-console.log("________________Function Expression_____________");
+number(5,10)
+
+console.log("______Function Expression____");
 
 // const gaol = function(){
 //     console.log("fal")
 // }
 // gaol()
 
-const Expression = function(){
-    console.log("kenya");
+const kalkaak = function(){
+    console.log("welcome")
 }
-Expression();
+kalkaak()
 
-console.log("___________________Arrow Function (ES6)______________");
+console.log("____Arrow Function (ES6)___");
 
 // const dallo = () =>{
 // console.log("loo")
 // }
 // dallo()
 
-const Arrow = () => {
-    console.log("Arrow");
+const gul = () => {
+console.log("hodon")
 }
-Arrow()
-console.log("_____________________Scope___________________________");
+gul()
+console.log("______Scope_________");
 
-let mon = "nin";
 
-const bal = () => {
-    console.log("var")
-}
-bal()
+//     let  myName = "Mc"; 
+//     const age = 90;
+//     var year = 2025;
+
+//     // function showLocalVariable(){
+//     //   let localVariable = "I'm local Variable "
+//     //     console.log(localVariable);
+        
+//     // }
+
+//     // showLocalVariable();
+    
+//     let showLocalVariable = function(){ //function ka nuucaan waxa u dhigmaa var camal
+//         let localVariable = "I'm local Variable "
+//         console.log(localVariable);
+        
+//     }
+
+//     showLocalVariable();
+
+//  }
+
+//  showLocalVariable();
+//  console.log(year);
+
+
 
 const kal = function(){
     let wwe = "kaw";
     console.log(object)
 }
+
+const monthy = "sandka oo dhan waa 12 bil";
+const global = () => {
+    console.log(monthy)
+}
+global()
+
+function localVariable(){
+let lacal = "local waxa u ka shaqeeyaa local";
+console.log("hello " + lacal)
+
+}
+
+localVariable()
