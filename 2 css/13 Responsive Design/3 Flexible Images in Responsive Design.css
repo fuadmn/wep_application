@@ -1,0 +1,20 @@
+/* 1rem == 16px */
+
+ /* 1rem == 16px */
+
+.container{
+    background-color: aquamarine;
+    /* width: 80%; cabikaad hesatid boqolkiibo 80 qaado */
+    max-width: 960px;
+    height: 500px;
+    margin-inline: auto;
+    font-size: 1em;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    font-size: 2em;
+}

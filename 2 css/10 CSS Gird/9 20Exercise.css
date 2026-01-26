@@ -1,0 +1,23 @@
+.container{
+    padding: 22px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+}
+
+.item1{
+  border: 5px solid yellow;
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+  background-color: rgb(57, 57, 189);
+}
+
+
+.item{
+    border: 5px solid yellow;
+    background-color: rgb(57, 57, 189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

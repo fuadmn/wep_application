@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+       <!-- Product Card  -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <!-- Product Top: Image -->
+           <div class="flex justify-center mb-4">
+            <img src="https://static.nike.com/a/images/t_default/f7065c34-5e45-45ac-9ca6-a9eba20581ca/NIKE+AIR+MAX+1.png" alt="Product" class="h-48 object-cover" alt="">
+           </div>
+
+           <!-- Product Info: Evertything stacked -->
+            <div class="flex flex-col space-y-2">
+              <h3 class="font-bold">Nike Air Max</h3>
+
+              <!-- Price and Rating side by side -->
+               <div class="flex justify-between items-center">
+                <span class="text-xl font-bold">$99.99</span>
+                <div class="flex items-center">
+                  <span class="text-yellow-400">★★★★☆</span>
+                  <span class="text-sm text-gray-600 ml-1">(4.2)</span>
+                </div>
+               </div>
+
+               <!-- Color Options -->
+                <div class="flex space-x-2">
+                  <div class="w-6 h-6 rounded-full bg-red-500"></div>
+                  <div class="w-6 h-6 rounded-full bg-blue-500"></div>
+                  <div class="w-6 h-6 rounded-full bg-black"></div>
+                </div>
+
+                <button class="bg-rose-500 text-white py-2 rounded hover:bg-rose-600"</button>Add to Cart</button>
+            </div>
+        </div>
+           
+</body>
+</html>

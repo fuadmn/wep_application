@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    width: 400pv;
+}
+.item{
+  height: 50px;
+  border: 2px solid black;
+  flex: 1;
+}
+
+#item2{
+    flex: 3;
+}

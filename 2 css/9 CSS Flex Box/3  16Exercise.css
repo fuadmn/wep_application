@@ -1,0 +1,19 @@
+.media-player{
+    display: flex;
+    height: 100px;
+    width: 500px;
+
+}
+
+.control-button-prev{
+    flex: 1;
+}
+
+.control-button-play{
+ flex: 2;
+}
+
+.control-button-next{
+    flex: 1;
+}
+

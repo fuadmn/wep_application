@@ -1,0 +1,39 @@
+body{
+    background-color: chocolate;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+#paragraph1{
+    background-color: blue;
+}
+
+#paragraph2{
+    background-color: yellow;
+}
+
+#paragraph3{
+    background-color: black;
+    color: white;
+}
+
+#paragraph4{
+    color: black;
+}
+
+span{
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+.nafis{
+    padding: 30px;
+    font-size: 25px;
+}

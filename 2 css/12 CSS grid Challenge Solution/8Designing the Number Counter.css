@@ -1,0 +1,122 @@
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+img{
+  width: 100%;
+}
+
+/* .main{
+}
+
+.sidebar{
+} */
+
+
+.grid-container{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 30px;
+}
+
+.main{
+    grid-column: 1/ span 2;
+}
+
+.topbar{
+  border-bottom: 2px solid #222222;
+  padding: 5px 0;
+}
+
+.topbar span{
+  background-color: #222222;
+  color: white;
+  padding: 6px 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.blog{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.blog img {
+  width: 222.716px;
+  height: 155.891;
+}
+
+.blog-info h2 {
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+.blog-info h2:hover {
+  cursor: pointer;
+  color: #4db2ec;
+}
+
+.author-date .author {
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+}
+
+.author-date .date , .line{
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 400;
+  color: #767676;
+}
+
+.description{
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #767676; 
+}
+
+.ads {
+  background: url('https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/08/97-485x360.jpg.webp')center/cover no-repeat;
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+}
+
+.ad {
+  border-color:  #8594c1;
+}
+
+.ad span{
+  background-color: #8594c1;
+}
+
+.blog.sidbar{
+  display: flex;
+  flex-direction: column;
+}
+
+.blog.sidbar img{
+  width: 100%;
+  height: auto;
+}
+
+.blog.sidbar .author-date{
+  margin-block: 10px ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.number-count{
+  font-size: 10px;
+  line-height:  12px;
+  font-weight: 60;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}

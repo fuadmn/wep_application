@@ -1,0 +1,50 @@
+body{
+    font-family: Arial,  sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.Product-grid{
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(Auto-fill, minmax(250px, 1fr));Auto-fill waxa weeye si otomatic isku buxi */
+}
+
+.Product-item{
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* medium devices */
+@media(max-width: 1200px){
+
+    .Product-grid{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+/* Table */
+@media(max-width: 768px){
+
+    .Product-grid{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+/* phone */
+@media(max-width: 479px){
+
+    .Product-grid{
+        grid-template-columns: 1fr;
+    }
+}

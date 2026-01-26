@@ -1,0 +1,21 @@
+.heager{
+    background-color: blue;
+    color: #ffffff;
+}
+
+.about, .services{
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.services{
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.footer{
+    background-color: #32383f;
+    color: #d9d5d5;
+    
+
+}

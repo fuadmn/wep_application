@@ -1,0 +1,75 @@
+/* 1rem == 16px */
+
+ /* 1rem == 16px */
+
+
+ html{
+    /* 32px */
+    font-size: 2rem;
+ }
+
+ #phone{
+    display: none;
+ }
+ 
+ #table{
+    display: none;
+ }
+ 
+ #screen{
+    display: none;
+ }
+
+
+.container{
+    background-color: aquamarine;
+    /* width: 80%; cabikaad hesatid boqolkiibo 80 qaado */
+    max-width: 960px;
+    height: 500px;
+    margin-inline: auto;
+    font-size: 0.5em;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    /* 1 rem = into pixel ee uu yahay parent-ga ama root ga html-ka */
+    font-size: 1.5rem;
+}
+
+/* smart phone */
+@media(max-width: 480px){
+
+    .body{
+        background-color: aquamarine;
+    }
+    #phone{
+        display: block;
+    }
+}
+
+@media(min-width: 481px){
+
+    body{
+        background-color: blue;
+    }
+    #table{
+        display: block;
+    }
+}
+
+@media(min-width: 1025px){
+
+    body{
+        background-color: blueviolet;
+    }
+    #table{
+        display: none;
+    }
+    
+    #screen{
+        display: block;
+    }
+}

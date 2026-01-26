@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    max-width: 1110px;
+    margin-inline: auto;
+}
+
+
+
+
+/* *********************************section-1********************************/
+
+/* Css Varibales */
+
+:root{
+    --pramary-color : #F78F7D;
+    --secondary-color : #F8BCAD;
+    --info-color : #FFDCD4;
+    --color :  #222222;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: relative;
+    height: 83px;
+    width: 100%;
+}
+
+nav{
+    height: 83px;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.brand{
+    color: #021300;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+.brand-text{
+    color: var(--pramary-color);
+}
+
+.navigation-bar{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation-bar ul li {
+    display: inline-block;
+    margin: 0px 25px;
+}
+
+
+.navigation-bar ul li:last-child{
+    margin-right: 0px;
+}
+
+
+.navigation-bar ul li a{
+    color: #222222;
+    font-size: 16px;
+    font-weight: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.navigation-bar ul li a:hover{
+    color: var(--pramary-color);
+    border-bottom: 2px solid var(--pramary-color);
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 28px;
+    color: #222222;
+    background-color: var(--info-color);
+    border-radius: 5px;
+    font-weight: normal;
+    font-weight: 600;
+}
+
+.navigation-bar ul li a.btn:hover{
+    background-color: var(--pramary-color);
+    color: white;
+}
+.burger{
+    width: 25%;
+    cursor: pointer;
+    display: none;
+}
+
+.burger span{
+    display: block;
+    margin-bottom: 3px;
+    height: 3px;
+    color: #021300;
+    width: 100%;
+    background-color: var(--pramary-color);
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 991px){
+    .navigation-bar {
+        display: block !important;
+    }
+}
+
+ 
+/**********************************section-2********************************/
+
+
+.waadax{
+    background-color: aqua;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-min-an-1234035.jpg') bottom/ cover no-repeat; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.work{
+    color: white;
+    text-transform: capitalize;
+}
+
+.with{
+    font-size: 7rem;
+    margin: 1.5rem 0;
+}
+
+.gym{
+    color: red;
+}
+/**********************************section-3********************************/
+
+
+
+.Choose-Program{
+    margin-top: 6rem;
+    text-align: center;
+    /* background-color: antiquewhite; */
+    margin-bottom: 2rem;
+}
+
+
+.Choose-Program_a {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.red{
+    color: red;
+}
+
+.Choose-Program_b{
+    padding-bottom: 1rem;
+
+}
+
+p{
+    color: rgb(145, 110, 110);
+}
+
+
+
+/* *********************************section-two********************************/
+
+
+.grild_one{
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
+}
+
+
+.Basic{
+    /* background-color: rgb(208, 225, 240); */
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px ;
+}
+
+.Basic_one{
+    grid-column: 1/span 1;
+}
+
+.Basic_two{
+    grid-column: 2/span 4;
+    /* background-color: rgb(174, 166, 155); */
+    margin-left: 2rem;
+    margin-bottom: 4.8125rem;
+}
+
+.Basic_two h1{
+    font-size: 23px;
+    padding-bottom: 0.4125rem;
+}
+
+p{
+    padding-bottom: 0.4125rem;
+}
+
+.Discover_More{
+    color: red;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.Pexels{
+    color: blue;
+}
+
+
+
+
+.Fitness{
+ /* background-color: rgb(88, 103, 116); */
+ display: grid;
+ grid-template-columns: 100px 100px 100px 100px ;
+}
+
+
+.Fitness_one{
+    grid-column: 1/span 1;
+}
+
+.Fitness_two{
+    grid-column: 2/span 4;
+    /* background-color: rgb(174, 166, 155); */
+    margin-left: 2rem;
+    margin-bottom: 4.8125rem;
+}
+
+.Fitness_two h1{
+    font-size: 23px;
+    padding-bottom: 0.4125rem;
+}
+
+/*****************************section-three********************************/
+
+.kaah{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-min-an-1234035.jpg') bottom/ cover no-repeat; 
+    height: 27rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.on{
+    color: white;
+    font-size: 3rem;
+}
+
+.link{
+    color: red;
+}
+
+.placerat{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.btn{
+    background-color: red;
+    padding: 1rem 2.5rem;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: rgb(197, 65, 65);
+}
+/*****************************section-five********************************/
+
+.Training{
+    /* background-color: blue; */
+    height: 34.375rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 11rem;
+}
+
+.First_one{
+  /* background-color: rgb(126, 151, 173); */
+}
+
+
+.First_a{
+    display: grid;
+    height: 6.25rem;
+    /* background-color: beige; */
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    box-shadow:  0px 4px 11px rgba(0,0,0,0.2);
+    border-radius: 9px;
+    margin-bottom: 1.875rem;
+}
+
+
+
+.First_b{
+    display: flex;
+    align-items: center;
+    padding-left: 0.4375rem;
+}
+
+
+.First_c{
+    grid-column: 2/span 5;
+    display: grid;
+    height: 6.25rem;
+    /* background-color: rgb(52, 52, 41); */
+    display: flex;
+    align-items: center;
+}
+
+.kalar{
+    background-color: red;
+    color: white;
+    font-size: 900;
+}
+
+
+
+
+
+
+
+.Second{
+    grid-column: 2/span 3;
+  /* background-color: rgb(76, 86, 95); */
+}
+
+.Second, .bada{
+    border-radius: 9px;
+    margin-bottom: 1.375rem;
+}
+
+.Second .Fourth{
+    font-size: 1.7rem;
+    margin-bottom: 1.375rem;
+}
+
+.Second p{
+    margin-bottom: 1.375rem;
+}
+
+.Second, .btn{
+    padding: 0.6875rem 1rem;
+    font-size: 1rem;
+}
+/*****************************section-six********************************/
+
+.bool{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-min-an-1234035.jpg') bottom/ cover no-repeat; 
+    height: 76rem;
+    margin-bottom: 10rem;
+    display: flex;
+    text-align: center;
+}
+
+.Classes{
+    color: white;
+}
+
+.business{
+    color: white;
+    font-size: 1rem;
+}
+
+.Monday{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
+
+.Wednesday{
+    color: red;
+}
+
+.dollo{
+    color: white;
+}
+
+.var{
+    border: 1px solid rgb(255, 255, 255);
+    height: 100px;
+    width: 400px;
+}
+
+/*****************************section-Seven********************************/
+.seitans{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 7rem;
+}
+
+
+.Bowers{
+    height: 34.375rem;
+    background-color: rgb(255, 255, 255);
+    width: 25rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5625rem;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.2);
+}
+
+
+.Bowers img{
+    width: 100%;
+}
+.Strength{
+    text-align: start;
+    margin: 1rem 0;
+    font-size: 0.7rem;
+    color: red;
+}
+
+.Bret{
+    text-align: start;
+    margin-bottom: 1.1rem;
+}
+
+.vegan{
+    text-align: start;
+    margin-bottom: 1.3rem;
+}
+
+.icon{
+    text-align: start;
+}
+
+.fa-facebook, .fa-twitter{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+/*****************************section-8********************************/
+
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 37rem;
+    background-color: beige;
+    margin-bottom: 6rem;
+}
+
+.cont_one{
+    background-color: rgb(92, 123, 123);
+}
+
+.embed{
+    width: 100%;
+    height: 635px;
+}
+
+.cont_two{
+    background-color: aqua;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-min-an-1234035.jpg') bottom/ cover no-repeat; 
+}
+
+
+.cont_two .zoom{
+    margin: 2rem;
+    height: 33.125rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5625rem;
+}
+
+.zoom_a{
+    display: flex;
+    padding: 3rem;
+}
+
+.zoom_b{
+    margin-right: 2rem;
+}
+
+.type{
+    width: 23.125rem;
+    height: 2.3125rem;
+    border: none;
+    border: 1px solid rgba(0, 0, 0,0.3);
+    padding-left: 0.5rem;
+}
+
+.soas{
+    width: 48.125rem;
+    margin-left: 3rem;
+}
+
+.texta{
+    margin-top: 2rem;
+    height: 11rem;
+}
+
+.Send{
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+/*****************************section-9********************************/
+
+
+footer{
+    text-align: center;
+    font-size: 0.6rem;
+    padding-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* *********************************@media********************************/
+@media(max-width: 768px){
+
+    .Choose-Program_a {
+        font-size: 1rem;
+        padding: 0 1.375rem;
+    }
+
+    .Choose-Program{
+        margin-bottom: 7rem;
+    }
+
+    .consectetur{
+        font-size: 1.4rem;
+    }
+
+
+
+
+
+
+    .grild_one{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.375rem;
+    }
+
+    .grild_one h1{
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+
+    .grild_one p{
+        font-size: 0.8.4rem;
+    }
+
+    .grild_one .Discover_More{
+       font-size: 1rem;
+    }
+
+
+
+    .enim{
+        padding: 0 1.375rem;
+    }
+
+    .on{
+        font-size: 2rem;
+    }
+
+    .placerat{
+        font-size: 1rem;
+    }
+    
+
+
+    .Training{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.375rem;
+
+    }
+
+
+    .bada{
+        width: 100%;
+        
+    }
+
+    .First_a{
+        width: 100%;
+    }
+
+
+
+
+
+    .bool{
+        margin-top: 40rem;
+    }
+ 
+    .dollo{
+       padding: 0 1rem; 
+       font-size: 0.5rem;
+       font-weight: bold;
+    }
+
+
+
+    .seitans{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.375rem;
+    }
+
+
+    .cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .zoom_a{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+     .type, .texta{
+        width: 15rem;
+
+     
+     }
+
+     .cont{
+       
+        margin-bottom: 44rem;
+    }
+
+
+
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    .navigation-bar {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        background-color: var(--info-color);
+        padding: 20px 0;
+        text-align: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .navigation-bar ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .navigation-bar ul li a.btn{
+        background-color:  var(--secondary-color);
+        color: #fff;
+    }
+    
+    .navigation-bar.active {
+        display: flex;
+    }
+
+    .work{
+        font-size: 2em;
+    }
+}
+
+    
