@@ -1,0 +1,9 @@
+{
+    "id": 1,
+    "name": "Alice",
+    "city": "london",
+    "orders": [
+        {"id": 1, "product": "Laptop", "quantity": 1},
+        {"id": 2, "product": "Mouse", "quantity": 2}
+    ]
+}
