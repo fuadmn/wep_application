@@ -1,0 +1,14 @@
+.profile-card {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #333;
+    display: inline-block;
+}
+
+.profile-card img{
+    width: 100%;
+}
+
+.content-box{
+    box-sizing: border-box;
+}

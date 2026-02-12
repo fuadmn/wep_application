@@ -1,0 +1,24 @@
+#box1{
+    background-color: red;
+    margin: 10px 20px 20px 20px;
+    padding: 20px; /* waa nafis gudaha*/
+}
+
+#box2{
+    background-color: green;
+    /* margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px; */
+
+    /* margin: top right bottom left */
+
+    margin: 20px 20px;
+    padding: 10px 20px;
+}
+
+#box3{
+    background-color: blue;
+    margin:  20px  ;
+    padding: 20px;
+}

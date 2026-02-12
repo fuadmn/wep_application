@@ -1,0 +1,18 @@
+body{
+    font-family: Arial,  sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Product-grid{
+    display: grid;
+    gap: 10px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(Auto-fill, minmax(250px, 1fr));/*Auto-fill waxa weeye si otomatic isku buxi*/
+}
+
+.Product-item{
+    background-color: aquamarine;
+    padding: 20px;
+}

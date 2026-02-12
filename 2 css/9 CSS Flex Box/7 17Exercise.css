@@ -1,0 +1,36 @@
+.hero{
+    display: flex;
+    border: 2px solid rgb(215, 144, 144);
+    
+}
+
+
+.on{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.lorem{
+    margin-bottom: 55px;
+    margin-right: 25px;
+    text-align: justify;
+}
+
+.hero img {
+    margin-right: 20px;
+    padding: 22px;
+}
+
+
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    background-color: rgb(105, 105, 220);
+    padding: 15px 20px;
+    color: white;
+    border: none;
+}

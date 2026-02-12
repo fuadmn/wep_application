@@ -1,0 +1,9 @@
+blockquote{
+    font-size: 25px;
+    font-style: italic;
+}
+
+footer{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

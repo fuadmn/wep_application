@@ -1,0 +1,15 @@
+.feature-section{
+    height: 500px;
+    width: 800px;
+    background-image: url('https://plus.unsplash.com/premium_photo-1726711447129-49ae8f7ed2e9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJ1c2luZXNzJTIwcHJ1ZGVjdHxlbnwwfHwwfHx8MA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+ 

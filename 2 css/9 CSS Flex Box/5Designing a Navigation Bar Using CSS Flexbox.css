@@ -1,0 +1,35 @@
+.flex-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.nav-link{
+    display: flex;
+   list-style:  none;
+}
+
+.nav-link li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.logo-container{
+    color: white;
+}
+
+.action-container button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.action-container button:hover{
+    background-color: #0045b3;
+}
+

@@ -1,0 +1,15 @@
+.boxs{
+    display: flex;
+    height: 100vh;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    align-content: center; /*waa is ku soo dhawenaa */
+}
+
+.box{
+    background-color: blue;
+    padding: 20px;
+    margin: 10px;
+}

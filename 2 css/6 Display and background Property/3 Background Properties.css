@@ -1,0 +1,9 @@
+.image-background{
+    background-image: url('https://images.unsplash.com/photo-1739382446038-184e72fdc427?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8');
+    height:  100vh;
+    /* width: 100vw; */
+    background-size: cover; /* wax usameenaa in oo sawika ku balaato */
+    /* background-repeat: repeat-x; waxaa soo cilcilisaa jifjig */
+    /* background-repeat: repeat-y; waxaa soo cilcilisaa jogjoog */
+    background-repeat: no-repeat; /*  yaan la soo cilcilisaa jifjig jogjoog */
+}

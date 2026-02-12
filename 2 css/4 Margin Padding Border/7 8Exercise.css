@@ -1,0 +1,30 @@
+.quote{
+    padding: 22px;
+    margin-bottom: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(157, 173, 124);
+}
+
+#quote1{
+    border: 2px solid rgb(221, 80, 80);
+    background-color: rgb(107, 125, 70);
+
+}
+#quote2{
+    border: 2px double blue;
+    background-color: rgb(125, 64, 158);
+
+}
+#quote3{
+    border: 2px dashed black;
+    background-color: rgb(109, 116, 95);
+
+}
+#quote4{
+    border: 2px dotted red;
+    background-color: rgb(122, 125, 231);
+
+}

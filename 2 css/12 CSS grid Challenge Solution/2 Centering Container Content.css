@@ -1,0 +1,26 @@
+.container{
+    background-color: aqua;
+    width: 1110px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.main{
+  background-color: red;
+  padding: 100px;
+}
+
+.sidebar{
+ background-color: black;
+ padding: 100px;
+}
+
+
+.grid-container{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main{
+    grid-column: 1/ span 2;
+}
