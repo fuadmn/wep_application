@@ -7,11 +7,7 @@ const reducer = (state, action) => {
     case "add":
       return [...state, action.payload];
     case "toggle":
-      return state.map((todo) =>
-        todo.id === action.payload
-          ? { ...todo, completed: !todo.completed }
-          : todo,
-      );
+      return state.map((todo) => todo.id === action.payload ? { ...todo, completed: !todo.completed } : todo);
     case "delete":
       return state.filter((todo) => todo.id != action.payload);
     default:

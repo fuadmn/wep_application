@@ -1,0 +1,25 @@
+.appContainer{
+    background-color: bisque;
+    border: 1px solid tomato;
+}
+
+.activeHeaderTitle{
+    color: white;
+    background-color: blueviolet;
+    font-size: 22px;
+}
+
+.inactiveHeaderTitle{
+  color: #000;
+  background-color: #ddd;
+}
+
+.description {
+    font-style:  italic;
+    color: #000;
+}
+
+.darkMode{
+ background-color: #000;
+ color: white;
+}

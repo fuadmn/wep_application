@@ -1,17 +1,11 @@
-import { Outlet } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import React from 'react'
 
-function App() {
-	return (
-		<div className="max-w-4xl mx-auto pt-16">
-			<Header />
-
-			{/* dynamic page*/}
-			<Outlet />
-			<Footer />
-		</div>
-	);
+const App = () => {
+  return (
+    <div>
+      <h1 className=''>hello</h1>
+    </div>
+  )
 }
 
-export default App;
+export default App

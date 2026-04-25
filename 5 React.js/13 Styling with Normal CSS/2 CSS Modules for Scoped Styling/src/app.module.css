@@ -1,0 +1,15 @@
+.anotherContainer{
+    background-color: bisque;
+    border: 1px solid tomato;
+}
+
+.headerTitle{
+    color: white;
+    background-color: blueviolet;
+    font-size: 22px;
+}
+
+.description {
+    font-style:  italic;
+    color: #000;
+}

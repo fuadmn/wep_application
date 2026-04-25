@@ -6,7 +6,7 @@ const App = () => {
 
    useEffect(() => {
       //1000ms = 1s
-     const timeId = setInterval(() => {
+     const timeId = setInterval(() => { /// time saacada
          // console.log("new way");
          setTime((prev) => prev +1)
       },1000);
