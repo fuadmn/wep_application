@@ -18,7 +18,7 @@ const App = () => {
         <Routes>
           {/* pubilc routes */}
           <Route path='/' element={<HomePage/>}/>
-          <Route path='/articles' element={<ArticlesPage/>}/>
+          <Route path='/article1s' element={<ArticlesPage/>}/>
           <Route path="/article/:id" element={<ArticlePage/>}/>
           
           {/* unauthenticated routes (redirect to home if logged in)
