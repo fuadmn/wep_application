@@ -1,3 +1,24 @@
+// import { useState } from "react"
+
+// function App(){
+
+//   const [name, setName] = useState("")
+
+// const handleChange = (event) => {
+//   console.log(event.target.value)
+//   setName(event.target.value)
+// }
+
+//   return(
+//     <>
+//      <input type="text"  onChange={handleChange}/>
+//      <p>Hello,{name}</p>
+//     </>
+//   )
+// }
+
+// export default App;
+
 import { useState } from "react"
 
 function App(){
@@ -18,3 +39,5 @@ const handleChange = (event) => {
 }
 
 export default App;
+
+

@@ -9,17 +9,17 @@ const ShoppingCart = () => {
 
      const [productPrice,setProductPrice] = useState('')
 
-     const handleAddProcuct = () => {
+     const handleAddProduct = () => {
         if(productName.trim() !== "" && productPrice.trim() !== ""){
 
-          const newProcucts = {
+          const newProducts = {
             id: Date.now(),
             name: productName,
             price: parseFloat(productPrice),
             quantity: 1
         }
-        console.log(newProcucts)
-        setProducts([...products,newProcucts]);
+        console.log(newProducts)
+        setProducts([...products,newProducts]);
         setProductName("");
         setProductPrice("");
         
@@ -28,25 +28,25 @@ const ShoppingCart = () => {
      }
 
      const removeProduct = (id) => {
-       const updateProcucts = products.filter(products => products.id !== id);
-       setProducts(updateProcucts)
+       const updateProducts = products.filter(products => products.id !== id);
+       setProducts(updateProducts)
      }
 
      const increaseQuantity= (id) => {
         // console.log(products)
-        const updateProcucts = products.map( products  => (
+        const updateProducts = products.map( products  => (
           products.id === id ? {...products, quantity : products.quantity + 1 } : products
         ))
-        //  console.log(updateProcucts)
-        setProducts(updateProcucts)
+        //  console.log(updateProducts)
+        setProducts(updateProducts)
      }
 
      const decreaseQuantity = (id) => {
        
-      const updateProcucts = products.map(products => (
+      const updateProducts = products.map(products => (
         products.id === id   && products.quantity > 1 ? {...products, quantity: products.quantity -1 } : products
       ))
-      setProducts(updateProcucts)
+      setProducts(updateProducts)
      }
      
      const totalPrice = products.reduce((total, products) => total + products.price * products.quantity,0);
@@ -58,9 +58,12 @@ const ShoppingCart = () => {
         <h1>Simple Shopping Cart</h1>
         <div>
             <h3>Add a Product</h3>
-            <input type="text" placeholder="Procuct Name" onChange={(e) => setProductName(e.target.value)} value={productName}/>
-            <input type="number" min="0" placeholder="Price" onChange={(e) => setProductPrice(e.target.value)} value={productPrice}/>
-            <button onClick={handleAddProcuct}>Add to Cart</button>
+            <input type="text" placeholder="Product Name" onChange={(e) => setProductName(e.target.value)} value={productName}/>
+            <input type="number"
+             min="0" 
+            // step="2" 
+            placeholder="Price" onChange={(e) => setProductPrice(e.target.value)} value={productPrice}/>
+            <button onClick={handleAddProduct}>Add to Cart</button>
         </div>
         {
             products.length > 0 ? (

@@ -1,3 +1,6 @@
+// useState // waxa walbo oo react ah  ujeedaan waa useState 
+// useState // dato weye
+
 import { useState } from "react"
 
 function App(){

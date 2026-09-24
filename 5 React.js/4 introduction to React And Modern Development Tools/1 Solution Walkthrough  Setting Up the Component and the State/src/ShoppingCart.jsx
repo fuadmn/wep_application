@@ -14,7 +14,7 @@ const ShoppingCart = () => {
            <h1>Simple Shopping Cart</h1>
            <div>
             <h3>Add a Product</h3>
-             <input type="text" placeholder="Procuct Name"/>
+             <input type="text" placeholder="Product Name"/>
              <input type="text" placeholder="Price"/>
              <button>Add to Cart</button>
            </div>

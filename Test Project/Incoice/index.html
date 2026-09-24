@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Invoice No: 0001</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- SheetJS for Excel Download -->
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+
+</head>
+
+
+<body class="min-h-screen bg-slate-100 p-4 md:p-8">
+
+    <!-- Main Container -->
+    <div class="mx-auto flex w-full max-w-6xl flex-col gap-6 lg:flex-row">
+
+
+        <!-- FORM -->
+        <div class="h-fit w-full rounded-2xl bg-white p-6 shadow-xl lg:max-w-sm">
+
+            <!-- Form Title -->
+            <div class="mb-6 border-b pb-4">
+
+                <h2 class="text-xl font-bold text-slate-800">
+                    Add New Product
+                </h2>
+
+                <p class="mt-1 text-sm text-slate-500">
+                    Enter product information below
+                </p>
+
+            </div>
+
+
+            <!-- Description -->
+            <div class="mb-4">
+
+                <label class="mb-2 block text-sm font-semibold text-slate-700">
+                    Description
+                </label>
+
+                <input
+                    id="description"
+                    type="text"
+                    placeholder="Product name"
+                    class="w-full rounded-lg border border-slate-300 p-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                >
+
+            </div>
+
+
+            <!-- Quantity -->
+            <div class="mb-4">
+
+                <label class="mb-2 block text-sm font-semibold text-slate-700">
+                    Quantity
+                </label>
+
+                <input
+                    id="quantity"
+                    type="number"
+                    min="1"
+                    placeholder="Enter quantity"
+                    class="w-full rounded-lg border border-slate-300 p-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                >
+
+            </div>
+
+
+            <!-- Price -->
+            <div class="mb-4">
+
+                <label class="mb-2 block text-sm font-semibold text-slate-700">
+                    Price ($)
+                </label>
+
+                <input
+                    id="price"
+                    type="number"
+                    min="0"
+                    step="0.01"
+                    placeholder="Enter price"
+                    class="w-full rounded-lg border border-slate-300 p-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                >
+
+            </div>
+
+
+            <!-- Rest -->
+            <div class="mb-4">
+
+                <label class="mb-2 block text-sm font-semibold text-slate-700">
+                    Rest ($)
+                </label>
+
+                <input
+                    id="rest"
+                    type="number"
+                    value="0"
+                    min="0"
+                    step="0.01"
+                    placeholder="Rest"
+                    class="w-full rounded-lg border border-slate-300 p-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                >
+
+            </div>
+
+
+            <!-- Discount -->
+            <div class="mb-6">
+
+                <label class="mb-2 block text-sm font-semibold text-slate-700">
+                    Discount ($)
+                </label>
+
+                <input
+                    id="discount"
+                    type="number"
+                    value="0"
+                    min="0"
+                    step="0.01"
+                    placeholder="Discount"
+                    class="w-full rounded-lg border border-slate-300 p-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                >
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="grid grid-cols-2 gap-3">
+
+                <button
+                    id="saveBtn"
+                    type="button"
+                    class="rounded-lg bg-green-600 px-5 py-3 font-bold text-white transition hover:bg-green-700 active:scale-95"
+                >
+                    Save
+                </button>
+
+
+                <button
+                    id="cancelBtn"
+                    type="button"
+                    class="rounded-lg bg-red-500 px-5 py-3 font-bold text-white transition hover:bg-red-600 active:scale-95"
+                >
+                    Cancel
+                </button>
+
+
+                <button
+                    id="downloadExcelBtn"
+                    type="button"
+                    class="col-span-2 rounded-lg bg-blue-700 px-5 py-3 font-bold text-white transition hover:bg-blue-800 active:scale-95"
+                >
+                    Download Excel
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- INVOICE -->
+        <div class="w-full overflow-hidden rounded-2xl bg-white shadow-xl">
+
+
+            <!-- Header -->
+            <div class="border-b border-slate-200 p-6">
+
+                <div class="text-center">
+
+                    <h1 class="text-2xl font-bold text-slate-800">
+                        Axamed Dauud Siyaad
+                    </h1>
+
+                    <h2 class="mt-2 text-2xl font-bold text-gray-700">
+                        619704818
+                    </h2>
+
+                    <h2 class="mt-2 text-xl font-bold text-red-500">
+                        INVOICE
+                    </h2>
+
+                </div>
+
+
+                <!-- Date and Invoice Number -->
+                <div class="mt-6 flex flex-col justify-between gap-4 text-sm sm:flex-row">
+
+                    <!-- Date and Time -->
+                    <div>
+
+                        <p
+                            id="invoiceDate"
+                            class="text-base font-medium text-gray-900"
+                        >
+                            Loading date...
+                        </p>
+
+                        <p
+                            id="invoiceTime"
+                            class="mt-1 text-sm text-slate-500"
+                        >
+                            Loading time...
+                        </p>
+
+                    </div>
+
+
+                    <!-- Invoice Number -->
+                    <div class="text-left sm:text-right">
+
+                        <p class="text-lg text-slate-600">
+
+                            Invoice No:
+
+                            <span class="text-2xl font-bold text-red-500">
+                                #0001
+                            </span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="p-4 md:p-6">
+
+
+                <!-- TABLE -->
+                <div class="overflow-x-auto rounded-xl border border-slate-200">
+
+                    <table class="w-full min-w-[600px] text-sm">
+
+                        <thead class="bg-blue-900 text-white">
+
+                            <tr>
+
+                                <th class="p-3 text-center">
+                                    No
+                                </th>
+
+                                <th class="p-3 text-left">
+                                    Description
+                                </th>
+
+                                <th class="p-3 text-center">
+                                    QTY
+                                </th>
+
+                                <th class="p-3 text-right">
+                                    Price
+                                </th>
+
+                                <th class="p-3 text-right">
+                                    Amount
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody
+                            id="tableBody"
+                            class="divide-y divide-slate-200 text-slate-600"
+                        >
+
+                            <!-- Products appear here -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- Empty Message -->
+                <div
+                    id="emptyMessage"
+                    class="py-8 text-center text-slate-400"
+                >
+                    No products added yet.
+                </div>
+
+
+                <!-- SUMMARY -->
+                <div class="ml-auto mt-6 w-full max-w-xs overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+
+
+                    <!-- Total -->
+                    <div class="flex justify-between p-3">
+
+                        <span class="text-slate-500">
+                            Total
+                        </span>
+
+                        <span
+                            id="total"
+                            class="text-xl font-semibold"
+                        >
+                            $0.00
+                        </span>
+
+                    </div>
+
+
+                    <!-- Rest -->
+                    <div class="flex justify-between border-t p-3">
+
+                        <span class="text-slate-500">
+                            Rest
+                        </span>
+
+                        <span
+                            id="restTotal"
+                            class="text-xl font-semibold"
+                        >
+                            $0.00
+                        </span>
+
+                    </div>
+
+
+                    <!-- Discount -->
+                    <div class="flex justify-between border-t p-3">
+
+                        <span class="text-slate-500">
+                            Discount
+                        </span>
+
+                        <span
+                            id="discountTotal"
+                            class="text-xl font-semibold"
+                        >
+                            $0.00
+                        </span>
+
+                    </div>
+
+
+                    <!-- Payment -->
+                    <div class="flex justify-between bg-slate-800 p-4 text-white">
+
+                        <span class="font-bold">
+                            Payment
+                        </span>
+
+                        <span
+                            id="payment"
+                            class="text-2xl font-bold"
+                        >
+                            $0.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Footer -->
+                <div class="mt-8 border-t pt-5 text-center text-sm text-slate-400">
+
+                    Thank you for your business!
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

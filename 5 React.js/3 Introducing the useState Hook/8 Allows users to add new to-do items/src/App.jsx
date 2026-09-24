@@ -3,7 +3,7 @@ import { useState  } from "react";
 function App(){
 
   const [todos, setTodos] = useState([])
-  const [inputValue,setinputValue] = useState("")
+  const [inputValue,setInputValue] = useState("")
 
   const handleAddTodo = () => {
     
@@ -14,14 +14,14 @@ function App(){
         completed: false,
     }
     setTodos([...todos, newTodo]);
-    setinputValue("");
+    setInputValue("");
    }
   }
 
   return(
     <div>
       <h1>Todo List</h1>
-      <input type="text" placeholder="Enter a new to-do" onChange={(e) => setinputValue(e.target.value)} value={inputValue}/>
+      <input type="text" placeholder="Enter a new to-do" onChange={(e) => setInputValue(e.target.value)} value={inputValue}/>
       <button onClick={handleAddTodo}>Add</button>
       <ul>
        {

@@ -7,7 +7,7 @@ function App(){
       <input type="text" placeholder="Enter a new to-do"/>
       <button>Add</button>
       <ul>
-        <li>Eat Healty</li>
+        <li>Eat Healthy</li>
       </ul>
     </div>
   )

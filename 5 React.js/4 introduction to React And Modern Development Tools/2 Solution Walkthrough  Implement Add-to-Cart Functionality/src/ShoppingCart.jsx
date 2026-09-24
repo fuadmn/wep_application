@@ -8,17 +8,17 @@ const ShoppingCart = () => {
 
      const [productPrice,setProductPrice] = useState('')
 
-     const handleAddProcuct = () => {
+     const handleAddProduct = () => {
         if(productName.trim() !== "" && productPrice.trim() !== ""){
 
-          const newProcucts = {
+          const newProducts = {
             id: Date.now(),
             name: productName,
             price: productPrice,
             quantity: 1
         }
-        console.log(newProcucts)
-        setProducts([...products,newProcucts]);
+        console.log(newProducts)
+        setProducts([...products,newProducts]);
         }
    
      }
@@ -28,9 +28,9 @@ const ShoppingCart = () => {
         <h1>Simple Shopping Cart</h1>
         <div>
             <h3>Add a Product</h3>
-            <input type="text" placeholder="Procuct Name" onChange={(e) => setProductName(e.target.value)} value={productName}/>
+            <input type="text" placeholder="Product Name" onChange={(e) => setProductName(e.target.value)} value={productName}/>
             <input type="number" placeholder="Price" onChange={(e) => setProductPrice(e.target.value)} value={productPrice}/>
-            <button onClick={handleAddProcuct}>Add to Cart</button>
+            <button onClick={handleAddProduct}>Add to Cart</button>
         </div>
         {
             products.length > 0 ? (
