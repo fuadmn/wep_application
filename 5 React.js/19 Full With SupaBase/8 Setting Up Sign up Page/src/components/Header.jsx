@@ -22,7 +22,7 @@ const Header = () => {
           <div className="flex">
             {/* logo */}
 
-            <div className="shrink-0 flex items-center">
+            <div className="flex-shrink-0 flex items-center">
               <Link className="text-2xl font text-orange-600">Blogify</Link>
             </div>
 
@@ -78,9 +78,9 @@ const Header = () => {
                 </div>
 
                 <div className="relative">
-                  <button
-                    className="flex justify-center items-center h-8 w-8 rounded-full bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
+                  <button className="flex justify-center items-center h-8 w-8 rounded-full bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
                     onMouseEnter={() => setIsDropdownOpen(true)}
+                    oclick={() => setIsDropdownOpen(!isDropdownOpen)}
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   >
 
@@ -97,7 +97,7 @@ const Header = () => {
                       onMouseLeave={() => setIsDropdownOpen(false)}
 
                     >
-                      <div className="absolute h-0.3 w-full top-3 bg-orange-400"></div>
+                      <div className="absolute h-0.3 w-full top-[12px] bg-orange-400"></div>
                       <Link className="block px-4 py-2 text-sm  hover:bg-gray-100">
                         Your Profile
                       </Link>
@@ -192,5 +192,5 @@ const Header = () => {
 
   );
 };
-
+``
 export default Header;

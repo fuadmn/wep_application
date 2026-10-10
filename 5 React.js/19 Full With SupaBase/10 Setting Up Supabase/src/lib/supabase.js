@@ -1,18 +1,18 @@
-import { createClient } from "@supabase/supabase_js";
+import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = import.meta.env.VITE_SUPABSE_URL
-const supabaseAnnpnKey = import.meta.env.VITE_SUPABSE_ANON_KEY
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
 
 
-const supabase = createClient(supabaseUrl,supabaseAnnpnKey, {
+const supabase = createClient(supabaseUrl,supabaseAnonKey, {
     auth: {
-        persistSession: true,
-        authRefreshToken: true
+          persistSession: true,
+          autoRefreshToken: true
     },
     realtime:{
-        params:{
-            eventPerSecond: 10
-        }
+             params:{
+                 eventPerSecond: 10
+             }
     }
 })
 

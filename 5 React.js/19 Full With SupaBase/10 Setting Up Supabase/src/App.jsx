@@ -25,7 +25,7 @@ const App = () => {
                {/* unauthenticated routes (redirect to home if logged in ) */}
 
                <Route path='/signin' element={<SignInPage/>}/>
-               <Route path='/signup' element={<SignUpPage/>}/>
+               <Route path='signup' element={<SignUpPage/>}/>
            </Routes>
       </main>
       {/* footer */}
