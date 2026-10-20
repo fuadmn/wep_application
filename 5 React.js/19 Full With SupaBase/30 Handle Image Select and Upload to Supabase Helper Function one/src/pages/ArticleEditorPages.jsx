@@ -41,13 +41,9 @@ const ArticleEditorPages = () => {
     setSelectedTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag])
   }
 
-
-
   const handleContentChange = (value) => {
     setContent(value)
   }
-
-
 
 
   return (
@@ -172,7 +168,7 @@ const ArticleEditorPages = () => {
             />
 
             <div className="flex justify-between items-center mt-1">
-              <span className='text-xs text-gray-500 truncate max-w-[80%]'>{featuredImageUrl}</span>
+              <span className='text-xs text-gray-500 truncate max-w-[80%'>{featuredImageUrl}</span>
 
               <button
                 type="button"
@@ -251,50 +247,50 @@ const ArticleEditorPages = () => {
       </div>
 
 
+
       {/* Content editor */}
       <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-1">Content</label>
         <div className="border border-gray-300 rounded-md overflow-hidden">
 
-          {/* React Quill */}
-
+         {/* React Quill */}
           <QuillEditor
+
             ref={editorRef}
             value={content}
             onChange={handleContentChange}
-            placeholder={"Write your article content here..."}
+            placeholder={"write your article content here..."}
             height="500"
           />
-
         </div>
       </div>
 
 
+   <div className="px-6 py-4 md:px-10 flex justify-end space-x-4">
+      <button
+      // onClick={() => handleSave(false)}
+      // disabled={isSaving}
+      className='px-6 py-3 border border-gray-300 rounded-md shadow-sm
+      text-gray-700 bg-white hover:bg-gray-50 focus:outline-none
+      focus:ring-2 focus:ring-offset-2
+      disabled:opacity-50 disabled:cursor-not-allowed'
+      >
+        {/* {isSaving ? 'Saving...' : 'Save as Draft'} */}
+         Save as Draft
 
-      <div className="px-6 py-4 md:px-10 flex justify-end space-x-4">
-        <button
-          // onChange={() => handleSave(false)}
-          disabled={isSaving}
-          className='px-6 py-3 border border-gray-300 rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none
-        focus:ring-2 focus:ring-offset-2
-        disabled:opacity-50 disabled:cursor-not-allowed'
-        >
-          {/* {isSaving ? 'isSaving...': 'Save as Draft'} */}
-          Save as Draft
-        </button>
+      </button>
+      <button
+      // onClick={() => handleSave(true)}
+      // disabled={isSaving}
+      className='px-6 py-3 border border-gray-300 rounded-md shadow-sm
+      text-white bg-orange-600 hover:bg-orange-700 focus:outline-none
+      focus:ring-2 focus:ring-offset-2
+      disabled:opacity-50 disabled:cursor-not-allowed'
+      >
+        Save and Publish
 
-        <button
-          // onChange={() => handleSave(true)}
-          disabled={isSaving}
-          className='px-6 py-3 border border-transparent rounded-md shadow-sm text-white bg-orange-600 hover:bg-orange700 focus:outline-none
-        focus:ring-2 focus:ring-orange-500 focus:ring-offset-2
-        disabled:opacity-50 disabled:cursor-not-allowed'
-        >
-          {/* {isSaving ? 'Saving...': 'Save and Publish'} */}
-          Save and Publish
-        </button>
-      </div>
-
+      </button>
+     </div>
 
     </div>
   )
