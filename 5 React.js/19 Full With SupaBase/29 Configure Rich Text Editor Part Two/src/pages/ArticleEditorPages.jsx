@@ -42,10 +42,14 @@ const ArticleEditorPages = () => {
   }
 
 
+ const handleContentChange = (value) => {
+      setContent(value)
+ }
 
-  const handleContentChange = (value) => {
-    setContent(value)
-  }
+
+
+
+
 
 
 
@@ -165,137 +169,101 @@ const ArticleEditorPages = () => {
 
         {featuredImageUrl && (
           <div className="mt-2 mb-4">
-            <img
-              src={featuredImageUrl}
-              alt="Featured image"
-              className='w-full justify-between items-center mt-1'
-            />
+            <img 
+            src={featuredImageUrl}
+             alt="Featured image"
+             className='w-full justify-between items-center mt-1'
+              />
 
-            <div className="flex justify-between items-center mt-1">
-              <span className='text-xs text-gray-500 truncate max-w-[80%'>{featuredImageUrl}</span>
+              <div className="flex justify-between items-center mt-1">
+                <span className='text-xs text-gray-500 truncate max-w-[80%'>{featuredImageUrl}</span>
 
-              <button
-                type="button"
-                className='text-red-500 text-xs hover:text-red-700'
-              >
-                Remove
-              </button>
-            </div>
+                <button 
+                 type="button"
+                 className='text-red-500 text-xs hover:text-red-700'
+                 >
+                  Remove
+                </button>
+              </div>
           </div>
         )}
       </div>
 
+     {/* Tags selection */}
+     <div className="mb-6 relative">
+      <label className="block text-sm font-medium text-gray-700 mb-1">Tags</label>
+      
+      <div className="flex flex-wrap gap-2">
 
-      {/* Tags selection */}
-
-      <div className="mb-6 relative">
-        <label className="block text-sm font-medium text-gray-700 mb-1">Tags</label>
-
-        <div className="flex flex-wrap gap-2">
-
-          {selectedTags.map(tag => (
-            <span
-              key={tag}
-              className='inline-flex items-center px-2.5 py-0.5
+        {selectedTags.map(tag => (
+          <span
+          key={tag}
+          className='inline-flex items-center px-2.5 py-0.5
           rounded-full text-xs font-medium bg-orange-100
           text-orange-800 cursor-pointer'
-              onClick={() => toggleTag(tag)}
-            >
-              {tag}
-              <button
-                type="button"
-                className='mt-1.5 inline-flex text-orange-400
+           onClick={() => toggleTag(tag)}
+          >
+            {tag}
+            <button
+            type="button"
+            className='mt-1.5 inline-flex text-orange-400
             hover:text-orange-600 focus:outline-none'
-              >
-                <span className='sr-only'>Remove tag {tag}</span>
-                <CgClose />
-              </button>
+            >
+              <span className='sr-only'>Remove tag {tag}</span>
+              <CgClose />
+            </button>
+            
+          </span>
+        ))}
+      </div>
 
-            </span>
-          ))}
-        </div>
+       {/* add tag button */}
 
-        {/* add tag button */}
-
-        <button
-          type="button"
-          className='inline-flex items-center px-3 py-1.5 border
+       <button
+       type="button"
+       className='inline-flex items-center px-3 py-1.5 border
        border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700
        bg-white hover:bg-gray-50 focus:outline-none focus:ring-2
        focus:ring-offset-2 focus:ring-orange-500'
-          onClick={() => setIsTagsMenuOpen(!isTagsMenuOpen)}
-        >
-          <FiTag className='mr-1.5 h-4 w-4' />
-          Add Tags
-        </button>
-
-
+        onClick={() => setIsTagsMenuOpen(!isTagsMenuOpen)}
+       >
+        <FiTag className='mr-1.5 h-4 w-4'/>
+        Add Tags
+       </button>
+        
+        
 
         {isTagsMenuOpen && (
           <div className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5
           overflow-auto focus:outline-none sm:text-sm">
             <div className="grid grid-cols-2 gap-2 p-2">
               {AVAILABLE_TAGS.map(tag => (
-                <div
-                  key={tag}
-                  onClick={() => toggleTag(tag)}
-                  className={`cursor-pointer px-2 py-2 rounded
+              <div
+              key={tag}
+              onClick={() => toggleTag(tag)}
+              className={`cursor-pointer px-2 py-2 rounded
                 hover:bg-gray-100 ${selectedTags.includes(tag) ? 'bg-orange-50 text-orange-700' : ''}`}
-                >
-                  {tag}
-                </div>
+              >
+                {tag}
+              </div>
               ))}
             </div>
           </div>
         )}
-      </div>
+     </div>
 
+     {/* React Quill */}
 
-      {/* Content editor */}
-      <div className="mb-6">
-        <label className="block text-sm font-medium text-gray-700 mb-1">Content</label>
-        <div className="border border-gray-300 rounded-md overflow-hidden">
+     <QuillEditor
 
-          {/* React Quill */}
+         ref={editorRef}
+         value={content}
+          onchange={handleContentChange}
+         placeholder={"Write your article content here..."}
+         height="500 "
 
-          <QuillEditor
-            ref={editorRef}
-            value={content}
-            onChange={handleContentChange}
-            placeholder={"Write your article content here..."}
-            height="500"
-          />
-
-        </div>
-      </div>
-
-
-
-      <div className="px-6 py-4 md:px-10 flex justify-end space-x-4">
-        <button
-          // onChange={() => handleSave(false)}
-          disabled={isSaving}
-          className='px-6 py-3 border border-gray-300 rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none
-        focus:ring-2 focus:ring-offset-2
-        disabled:opacity-50 disabled:cursor-not-allowed'
-        >
-          {/* {isSaving ? 'isSaving...': 'Save as Draft'} */}
-          Save as Draft
-        </button>
-
-        <button
-          // onChange={() => handleSave(true)}
-          disabled={isSaving}
-          className='px-6 py-3 border border-transparent rounded-md shadow-sm text-white bg-orange-600 hover:bg-orange700 focus:outline-none
-        focus:ring-2 focus:ring-orange-500 focus:ring-offset-2
-        disabled:opacity-50 disabled:cursor-not-allowed'
-        >
-          {/* {isSaving ? 'Saving...': 'Save and Publish'} */}
-          Save and Publish
-        </button>
-      </div>
-
-
+     />
+      
     </div>
   )
 }

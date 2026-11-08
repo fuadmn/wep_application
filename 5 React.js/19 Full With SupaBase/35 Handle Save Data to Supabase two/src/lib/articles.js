@@ -12,9 +12,9 @@ export const createArticle = async( article ) => {
         title: article.title,
         content: article.content,
         tags: article.tags,
-        author_id: article.authorId,
+        author_id: article.author_id,
         published: article.published || false,
-        featured_image: article.featured_image || null,
+        featured_image: article.featuredImageUrl || null,
     }
 
      // insert to supabse

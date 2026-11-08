@@ -176,9 +176,7 @@ const ArticleEditorPages = () => {
         )}
       </div>
 
-
      {/* Tags selection */}
-
      <div className="mb-6 relative">
       <label className="block text-sm font-medium text-gray-700 mb-1">Tags</label>
       
@@ -241,6 +239,8 @@ const ArticleEditorPages = () => {
         )}
      </div>
 
+
+      
     </div>
   )
 }

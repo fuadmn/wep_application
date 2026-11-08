@@ -5,6 +5,7 @@
 //`querySelectorAll`:** Selects all elements that match a CSS selector. // waxa lo istimaalaa element badan inad soo qabatid
 
 // by Id
+
 const header = document.querySelector("#header");
 
 console.log(header);

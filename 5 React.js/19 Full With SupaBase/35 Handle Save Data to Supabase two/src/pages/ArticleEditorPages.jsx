@@ -224,8 +224,6 @@ const ArticleEditorPages = () => {
          uploadedImageData
     })
   
-
-
   try {
     
 
